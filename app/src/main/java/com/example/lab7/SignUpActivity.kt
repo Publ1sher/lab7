@@ -39,7 +39,6 @@ class SignUpActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-
             val prefs = getSharedPreferences(credentialSharedPref, Context.MODE_PRIVATE)
             val existingUsernames = prefs.getStringSet("usernames", mutableSetOf())?.toMutableSet() ?: mutableSetOf()
 
