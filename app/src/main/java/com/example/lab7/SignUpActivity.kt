@@ -1,5 +1,4 @@
 package com.example.lab7
-
 import android.content.Context
 import android.os.Bundle
 import android.widget.Button
@@ -40,7 +39,6 @@ class SignUpActivity : AppCompatActivity() {
 
             val prefs = getSharedPreferences(credentialSharedPref, Context.MODE_PRIVATE)
             val existingUsernames = prefs.getStringSet("usernames", mutableSetOf())?.toMutableSet() ?: mutableSetOf()
-
             if (existingUsernames.contains(username)) {
                 Toast.makeText(this, "Username already exists!", Toast.LENGTH_SHORT).show()
             } else {
