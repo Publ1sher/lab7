@@ -27,7 +27,6 @@ class LoginActivity : AppCompatActivity() {
         btnLogin = findViewById(R.id.btn_login)
         btnSignUp = findViewById(R.id.btn_signup)
 
-        // Sign Up Button Click
         btnSignUp.setOnClickListener {
             startActivity(Intent(this, SignUpActivity::class.java))
         }
