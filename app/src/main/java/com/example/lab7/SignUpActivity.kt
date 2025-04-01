@@ -13,7 +13,6 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var edPassword: EditText
     private lateinit var edConfirmPassword: EditText
     private lateinit var btnCreateUser: Button
-
     private val credentialSharedPref = "our_shared_pref"
 
     override fun onCreate(savedInstanceState: Bundle?) {
