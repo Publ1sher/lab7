@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
 
             val prefs = getSharedPreferences(credentialSharedPref, Context.MODE_PRIVATE)
 
-            // Получаем пароль по введенному имени пользователя
+            // Получаем пароль
             val savedPassword = prefs.getString(inputUsername, null)
 
             if (savedPassword != null && savedPassword == inputPassword) {
