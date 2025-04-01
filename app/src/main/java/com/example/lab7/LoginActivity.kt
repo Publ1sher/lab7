@@ -31,7 +31,6 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, SignUpActivity::class.java))
         }
 
-        // Login Button Click
         btnLogin.setOnClickListener {
             val inputUsername = edUsername.text.toString()
             val inputPassword = edPassword.text.toString()
