@@ -47,7 +47,6 @@ class SignUpActivity : AppCompatActivity() {
             if (existingUsernames.contains(username)) {
                 Toast.makeText(this, "Username already exists!", Toast.LENGTH_SHORT).show()
             } else {
-                // Сохраняем логин и пароль
                 existingUsernames.add(username)
                 prefs.edit().apply {
                     putStringSet("usernames", existingUsernames)
